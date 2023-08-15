@@ -30,7 +30,7 @@ const Table: React.FC<UserData> = ({ listUsers }) => {
   
   return (
     <table id="addingCss">
-      <HeaderTable onPropertyChange={onPropertyChange}></HeaderTable>
+      <HeaderTable onPropertyChange={onPropertyChange} sortedItem={sortedItem}></HeaderTable>
       <DisplayData sortedUserDate={sortedUserDate}></DisplayData>
     </table>
   );
