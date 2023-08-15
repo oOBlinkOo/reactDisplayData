@@ -1,26 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Table from "./components/Table";
+function App () {
+  let rockyObj = {
+    Name: "Rocky",
+    FavoriteFood: "Sushi",
+    FavoriteMovie: "Back to The Future",
+    Status: "Inactive",
+  };
+  let miroslavObj = {
+    Name: "Miroslav",
+    FavoriteFood: "Sushi",
+    FavoriteMovie: "American Psycho",
+    Status: "Active",
+  };
+  let donnyObj = {
+    Name: "Donny",
+    FavoriteFood: "Singapore chow mei fun",
+    FavoriteMovie: "The Princess Bride",
+    Status: "Inactive",
+  };
+  let mattObj = {
+    Name: "Matt",
+    FavoriteFood: "Brisket Tacos",
+    FavoriteMovie: "The Princess Bride",
+    Status: "Active",
+  };
 
-function App() {
+  const listUsers = [rockyObj, miroslavObj, donnyObj, mattObj];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Display Data: </h1>
+      <Table listUsers={listUsers} />
     </div>
   );
-}
+};
 
 export default App;

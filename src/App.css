@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+
+#addingCss {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#addingCss td, #addingCss th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#addingCss tr:nth-child(even){background-color: #f2f2f2;}
+
+#addingCss tr:hover {background-color: #ddd;}
+
+#addingCss th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
